@@ -16,6 +16,22 @@ function adicionarAmigo(){
   
 }
 
+function sortearAmigo(){
+   if ( !amigos || amigos.length === 0){
+      alert("Não existe amigos cadastrados");
+      return;
+   }
+   let sorteio = Math.floor(Math.random() * amigos.length);
+   if (result){
+    result.innerHTML = amigos[sorteio];
+   }else{
+     alert("Elemento não encontrado");
+   }
+   
+   
+}
+
+
 
 
 
